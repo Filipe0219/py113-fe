@@ -22,10 +22,7 @@
     </nav>
 
     <section class="main-content columns">
-      <aside class="column is-2 section">
-        <p class="menu-label is-hidden-touch">
-          General
-        </p>
+      <aside class="column is-3 section">
         <ul class="menu-list">
           <li
             v-for="(item, key) of items"
@@ -41,7 +38,7 @@
         </ul>
       </aside>
 
-      <div class="container column is-10">
+      <div class="container column is-9">
         <Nuxt />
       </div>
     </section>
@@ -58,11 +55,11 @@ export default {
           icon: 'home',
           to: { name: 'index' }
         },
-        {
-          title: 'Jokes',
-          icon: 'lightbulb',
-          to: { name: 'jokes' }
-        }
+        // {
+        //   title: 'Jokes',
+        //   icon: 'lightbulb',
+        //   to: { name: 'jokes' }
+        // }
       ]
     }
   }

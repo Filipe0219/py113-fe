@@ -1,24 +1,19 @@
 <template>
   <div>
     <section class="section">
-      Welcome to our Dad Jokes Website.
-
-      <div>
-        <b-button type="is-primary is-light" @click="search(1)">Load me tha funny Joke!!!</b-button>
-      </div>
+        <b-button type="is-primary is-size-3 is-light" @click="search(1)">Load me that funny Joke!!!</b-button>
     </section>
 
-    <section v-if="joke">
-      <div>
+    <div v-if="joke">
+    <section class="section is-size-3" >
         {{ joke.question }}
-      </div>
-      <div>
-        <b-button type="is-secondary is-light" @click="show_answer = !show_answer">Tell me!</b-button>        
-      </div>
-      <div v-if="show_answer">
-        {{ joke.answer }}
-      </div>
-
+    </section>
+    <section class="section">
+        <b-button type="is-primary is-size-3" @click="show_answer = !show_answer">Tell me!</b-button>        
+    </section>
+    </div>
+    <section class="section is-size-3" v-if="show_answer">
+      {{ joke.answer }}
     </section>
   </div>
 </template>
