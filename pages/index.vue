@@ -34,7 +34,7 @@ export default {
     methods: {
       reset() {
         this.joke = {};
-        show_answer: false;
+        this.show_answer = false;
       },
       async search(page=1) {
         this.reset();
