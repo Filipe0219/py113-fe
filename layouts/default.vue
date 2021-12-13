@@ -10,7 +10,7 @@
           class="navbar-item"
           href="/"
         >
-          { Hacker Hang } - Jokes API
+          { Hacker Hang } - Jokes Database!
         </a>
 
         <div class="navbar-burger">
