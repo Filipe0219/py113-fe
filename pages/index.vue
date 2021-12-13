@@ -8,7 +8,7 @@
     <section class="section is-size-3" >
         {{ joke.question }}
     </section>
-    <section class="section" v-if="joke">
+    <section class="section" v-if="joke.question">
         <b-button type="is-primary is-size-3" @click="show_answer = !show_answer">Tell me!</b-button>        
     </section>
     </div>
